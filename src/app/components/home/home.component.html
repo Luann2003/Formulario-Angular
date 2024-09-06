@@ -1,0 +1,46 @@
+<h2>Formulário</h2>
+<form [formGroup]="userForm" #formDir="ngForm">
+    <label>
+        Nome:
+        <input type="text" formControlName="name" placeholder="Nome" required="">
+    </label>
+    <div class="validation-error">
+        <span *ngIf="submitted && name.hasError('required')">Este campo é obrigatório!</span>
+     </div>
+    <label>
+        Email:
+        <input type="email" formControlName="email" placeholder="Email" required="">
+    </label>
+    <div class="validation-error">
+        <span *ngIf="submitted && email.hasError('required')">Este campo é obrigatório!</span>
+     </div>
+    <label>
+        Stack:
+        <input type="text" formControlName="stack" placeholder="Stack">
+    </label>
+    <label class="sexo">
+        <div class="radios">
+            Male
+            <input type="radio" formControlName="gender" name="gender" value="male" required="">
+        </div>
+        <div class="radios">
+            Femea
+            <input type="radio" formControlName="gender" name="gender" value="female" required="">
+        </div> 
+    </label>
+    <span *ngIf="submitted && gender.hasError('required')">Este campo é obrigatório!</span>
+    <button (click)="onSubmit()">Salvar</button>
+    
+    <li *ngFor="let item of storedData; let i = index">
+        <p><strong>Name:</strong> {{ item.name }}</p>
+        <p><strong>Email:</strong> {{ item.email }}</p>
+        <p><strong>Stack:</strong> {{ item.stack }}</p>
+        <p><strong>Sexo:</strong> {{ item.gender }}</p>
+        <div class="buttons">
+            <button class="btn" id="edit" type="button" (click)="editItem(i)" >Editar</button>
+            <button class="btn" id="delete" type="button" (click)="deleteItem(i)" >Excluir</button>
+        </div>
+      </li>
+
+</form>
+

@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    display: block;
+    font-size: 0.875rem;
+    color: #d9534f;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }

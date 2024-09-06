@@ -1,0 +1,136 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título do formulário */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Labels e inputs */
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Linha de separação */
+hr {
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0;
+}
+
+/* Botão de envio */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #218838;
+    transition: 0.4s;
+}
+
+/* Estilo da lista de dados */
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li p {
+    margin: 5px 0;
+    color: #333;
+}
+
+li p strong {
+    color: #555;
+}
+
+.sexo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sexo div{
+    display: flex; 
+}
+
+.sexo input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #28a745; /* Exemplo de cor personalizada */
+}
+
+.radios{
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    margin: 10px;
+    width: 150px;
+}
+
+#edit{
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    transition: 0.4s;
+}
+
+#edit:hover{
+    background-color: #003c7d;
+    transition: 0.4s;
+}
+
+#delete{
+    background-color: rgb(180, 20, 20);
+    transition: 0.4s;
+}
+
+#delete:hover{
+    background-color: rgb(98, 12, 12);
+    transition: 0.4s;
+}
